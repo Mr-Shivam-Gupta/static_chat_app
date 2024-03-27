@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\chatContoller;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [chatContoller::class, 'index']);
+Route::post('/messages', [chatContoller::class, 'messages'])->name('messages');
