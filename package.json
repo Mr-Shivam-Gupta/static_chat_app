@@ -1,0 +1,16 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "build": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "axios": "^1.1.2",
+        "laravel-echo": "^1.16.0",
+        "laravel-mix": "^6.0.49",
+        "laravel-vite-plugin": "^0.7.2",
+        "pusher-js": "^8.4.0-rc2"
+    }
+}
