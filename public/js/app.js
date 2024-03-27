@@ -48,12 +48,12 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 window.Pusher = (pusher_js__WEBPACK_IMPORTED_MODULE_2___default());
 window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_1__["default"]({
   broadcaster: 'pusher',
-  key: /* unsupported import.meta.env.VITE_PUSHER_APP_KEY */ undefined.VITE_PUSHER_APP_KEY,
-  cluster: (_import$meta$env$VITE = /* unsupported import.meta.env.VITE_PUSHER_APP_CLUSTER */ undefined.VITE_PUSHER_APP_CLUSTER) !== null && _import$meta$env$VITE !== void 0 ? _import$meta$env$VITE : 'mt1',
-  wsHost: /* unsupported import.meta.env.VITE_PUSHER_HOST */ undefined.VITE_PUSHER_HOST ? /* unsupported import.meta.env.VITE_PUSHER_HOST */ undefined.VITE_PUSHER_HOST : "ws-".concat(/* unsupported import.meta.env.VITE_PUSHER_APP_CLUSTER */ undefined.VITE_PUSHER_APP_CLUSTER, ".pusher.com"),
-  wsPort: (_import$meta$env$VITE2 = /* unsupported import.meta.env.VITE_PUSHER_PORT */ undefined.VITE_PUSHER_PORT) !== null && _import$meta$env$VITE2 !== void 0 ? _import$meta$env$VITE2 : 80,
-  wssPort: (_import$meta$env$VITE3 = /* unsupported import.meta.env.VITE_PUSHER_PORT */ undefined.VITE_PUSHER_PORT) !== null && _import$meta$env$VITE3 !== void 0 ? _import$meta$env$VITE3 : 443,
-  forceTLS: ((_import$meta$env$VITE4 = /* unsupported import.meta.env.VITE_PUSHER_SCHEME */ undefined.VITE_PUSHER_SCHEME) !== null && _import$meta$env$VITE4 !== void 0 ? _import$meta$env$VITE4 : 'https') === 'https',
+  key: 6545321,
+  cluster:  'mt1',
+  wsHost: '127.0.0.1',
+  wsPort: 6001,
+  wssPort: 6001,
+  forceTLS: false,
   enabledTransports: ['ws', 'wss'],
   disableStats: true
 });

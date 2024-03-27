@@ -12,11 +12,15 @@
 <p><b>Trade data:</b> <span id="trade-data"></span></p>
 </body>
 
-
+<script src="{{asset('js/app.js')}}"></script>
 <script>
-Echo.channel('trade').listen('NewTrade', (e) => {
-    console.log(e.trade);
-    document.getElementById('trade-data').innerHTML = e.trade;
-});
+    console.log('Loading');
+    Echo.channel('trade')
+    .listen('NewTrade', (e) => {
+        console.log(e.trade);
+        // Update the DOM with trade data
+        document.getElementById('trade-data').innerHTML = e.trade;
+    });
+
 </script>
 </html>
